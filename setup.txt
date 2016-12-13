@@ -1,0 +1,25 @@
+# homebrew
+homebrew, http://brew.sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# git
+git config --global user.name "Martin Gerdin"
+git config --global user.email "martingerdin@gmail.com"
+
+# hub
+hub, https://hub.github.com
+brew install hub
+
+# create ssh key for github
+ssh-keygen -t rsa -b 4096 -C [EMAIL]
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+pbcopy < ~/.ssh/id_rsa.pub
+## then add ssh key to github in the browser interface
+
+# create remote repository on github with hub
+hub create [NAME]
+
+# r
+brew tap homebrew/science
+brew install r
