@@ -25,3 +25,6 @@ brew tap homebrew/science
 brew install r
 ## to make sure that r use the same locales as the system (to avoid it resorting to C) the locales
 ## need to be set in .bashrc and "imported" into emacs using exec-path-from-shell
+
+# ghostscript, to get doc-view, among other things, to work
+brew install ghostscript
