@@ -29,3 +29,22 @@ brew install ghostscript
 
 # install MacTeX
 brew cask install mactex
+## for some reason this did not work this time, so you might want to dowload from http://www.tug.org/mactex/mactex-download.html
+
+# AUCTeX (https://www.gnu.org/software/auctex/)
+brew install homebrew/tex/auctex
+
+# poppler, to get pdf-tools to work
+brew install poppler automake
+
+# pandoc, for conversion between file formats
+brew install pandoc
+
+# gimp
+brew install gimp
+
+# scribus
+brew install Caskroom/cask/scribus
+
+# adobe reader
+brew install Caskroom/cask/adobe-reader
