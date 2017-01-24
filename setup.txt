@@ -2,8 +2,8 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # git
-git config --global user.name "Martin Gerdin"
-git config --global user.email "martingerdin@gmail.com"
+git config --global user.name [NAME]
+git config --global user.email [EMAIL]
 
 # hub (https://hub.github.com)
 brew install hub
@@ -51,3 +51,10 @@ brew install Caskroom/cask/adobe-reader
 
 # libssh2, to get R devtools to work
 brew install libssh2
+
+# pip, to get csvkit among other stuff
+sudo easy_install pip
+
+# csvkit
+sudo -H pip install csvkit --ignore-installed six
+## the ignore-installed stuff is needed because of apple/pip related issues, see https://github.com/pypa/pip/issues/3165
