@@ -58,3 +58,9 @@ sudo easy_install pip
 # csvkit
 sudo -H pip install csvkit --ignore-installed six
 ## the ignore-installed stuff is needed because of apple/pip related issues, see https://github.com/pypa/pip/issues/3165
+
+# xlsx2csv, https://github.com/dilshod/xlsx2csv
+sudo easy_install xlsx2csv
+
+# texinfo, to get texi2dvi to work
+brew install texinfo
