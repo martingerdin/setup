@@ -64,3 +64,6 @@ sudo easy_install xlsx2csv
 
 # texinfo, to get texi2dvi to work
 brew install texinfo
+
+# spotify
+brew cask install spotify
