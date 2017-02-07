@@ -1,6 +1,10 @@
 # homebrew (http://brew.sh)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# get emacs
+brew tap railwaycat/emacsmacport
+brew cask install emacs-mac
+
 # git
 git config --global user.name [NAME]
 git config --global user.email [EMAIL]
