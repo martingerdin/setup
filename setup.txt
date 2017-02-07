@@ -31,11 +31,21 @@ brew install r
 # ghostscript, to get doc-view in emacs, among other things, to work
 brew install ghostscript
 
+# ess
+## first you need wget
+brew install wget --with-libressl
+## then get ess
+cd ~/Downloads
+wget http://ess.r-project.org/downloads/ess/ess-16.10.tgz
+tar -zxvf ess-16.10.tgz
+## then change DESTDIR to DESTDIR=/usr/local/opt/emacs-mac
+sudo make install
+
 # install MacTeX
 brew cask install mactex
 ## for some reason this did not work this time, so you might want to dowload from http://www.tug.org/mactex/mactex-download.html
 
-# AUCTeX (https://www.gnu.org/software/auctex/)
+# AUCTeX (https://www.gnu.org/software/auctex/), may require /Library/TeX/texbin (where MacTeX is)to be added to PATH
 brew install homebrew/tex/auctex
 
 # poppler, to get pdf-tools to work
