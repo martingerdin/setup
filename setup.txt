@@ -81,3 +81,8 @@ brew install texinfo
 
 # spotify
 brew cask install spotify
+
+# getnonfreefonts
+wget -q http://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+sudo texlua ./install-getnonfreefonts
+sudo getnonfreefonts-sys -a
