@@ -86,3 +86,7 @@ brew cask install spotify
 wget -q http://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
 sudo texlua ./install-getnonfreefonts
 sudo getnonfreefonts-sys -a
+
+# GNU awk
+brew link gmp
+brew install gawk
