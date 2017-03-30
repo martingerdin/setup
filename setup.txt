@@ -90,3 +90,6 @@ sudo getnonfreefonts-sys -a
 # GNU awk
 brew link gmp
 brew install gawk
+
+# antiword
+brew install antiword
