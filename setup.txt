@@ -93,3 +93,6 @@ brew install gawk
 
 # antiword
 brew install antiword
+
+# ImageMagick
+brew install ImageMagick
