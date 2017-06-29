@@ -100,3 +100,9 @@ brew install ImageMagick
 # PDFtk
 wget https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg
 sudo installer -pkg pdftk_server-2.02-mac_osx-10.11-setup.pkg -target /
+
+# JAGS
+wget https://sourceforge.net/projects/mcmc-jags/files/JAGS/4.x/Mac%20OS%20X/JAGS-4.2.0.dmg
+sudo hdiutil attach JAGS-4.2.0.dmg
+sudo installer -package /Volumes/JAGS-4.2.0/JAGS-4.2.0.mpkg -target /
+sudo hdiutil detach /Volumes/JAGS-4.2.0
