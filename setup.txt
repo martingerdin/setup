@@ -108,4 +108,9 @@ sudo installer -package /Volumes/JAGS-4.2.0/JAGS-4.2.0.mpkg -target /
 sudo hdiutil detach /Volumes/JAGS-4.2.0
 
 # mount webdav
+cd ~/
 mount_webdav -is https://owncloud.ki.se/remote.php/webdav/ owncloud/
+
+# mysql (if still on mac https://www.macminivault.com/install-mysql-on-macos-sierra/)
+brew install mysql
+brew services start mysql
