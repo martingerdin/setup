@@ -114,3 +114,6 @@ mount_webdav -is https://owncloud.ki.se/remote.php/webdav/ owncloud/
 # mysql (if still on mac https://www.macminivault.com/install-mysql-on-macos-sierra/)
 brew install mysql
 brew services start mysql
+
+# if homebrew does not work because of ownership issues (e.g. dir not writeable) try
+sudo chown -R martin:admin /usr/local/bin
