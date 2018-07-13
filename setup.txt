@@ -117,3 +117,8 @@ brew services start mysql
 
 # if homebrew does not work because of ownership issues (e.g. dir not writeable) try
 sudo chown -R martin:admin /usr/local/bin
+
+# get msmtp
+brew install msmtp --with-macosx-keyring
+# put .msmtprc in ~/
+
